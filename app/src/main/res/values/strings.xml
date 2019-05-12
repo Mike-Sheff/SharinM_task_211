@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SharinM_task_211</string>
+    <string name="hintInputMoney">Ввод денег</string>
+    <string name="hintInputInfo">Информация об оплате</string>
+    <string name="textBtnOK">OK</string>
+    <string name="textBankCardChkBx">С банковской карты</string>
+    <string name="textMobilePhoneChkBx">С мобильного телефона</string>
+    <string name="textCashAddressChkBx">Наличными по адресу</string>
+</resources>
