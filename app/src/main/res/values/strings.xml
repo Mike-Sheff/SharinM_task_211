@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SharinM_task_211</string>
+    <string name="app_name">Взаимоисключающие CheckBox</string>
     <string name="hintInputMoney">Ввод денег</string>
     <string name="hintInputInfo">Информация об оплате</string>
     <string name="textBtnOK">OK</string>
