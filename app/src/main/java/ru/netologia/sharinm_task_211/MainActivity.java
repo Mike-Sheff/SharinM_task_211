@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         mBankCardChkBx.setOnCheckedChangeListener(checkedChangeListener);
         mMobilePhoneChkBx.setOnCheckedChangeListener(checkedChangeListener);
         mCashAddressChkBx.setOnCheckedChangeListener(checkedChangeListener);
-        mBtnOk.setOnClickListener(new CompoundButton.OnClickListener() {
+        mBtnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
