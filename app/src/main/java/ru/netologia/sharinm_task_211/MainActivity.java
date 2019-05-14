@@ -51,24 +51,24 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     summaFloat = Float.parseFloat(mInputMoney.getText().toString());
                 } catch (Exception exp) {
-                    Toast.makeText(MainActivity.this, "Сумма для оплаты не введена", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, getString(R.string.textMessageErrorNotSumma), Toast.LENGTH_LONG).show();
                 }
 
                 if ((mBankCardChkBx.isChecked() == false) && (mMobilePhoneChkBx.isChecked() == false) && (mCashAddressChkBx.isChecked() == false)) {
-                    Toast.makeText(MainActivity.this, "Не выбран вариант оплаты!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, getString(R.string.textMessageErrorNotChecked), Toast.LENGTH_LONG).show();
                 } else {
                     if (mBankCardChkBx.isChecked()) {
-                        textString = " будет осуществлена с карты";
+                        textString = getString(R.string.textMessageBankCard, summaFloat);
                     }
 
                     if (mMobilePhoneChkBx.isChecked()) {
-                        textString = " будет осуществена с мобильного телефона";
+                        textString = getString(R.string.textMessageMobilePhone, summaFloat);
                     }
 
                     if (mCashAddressChkBx.isChecked()) {
-                        textString = " с помощью налички при получении";
+                        textString = getString(R.string.textMessageCashAddress, summaFloat);
                     }
-                    Toast.makeText(MainActivity.this, "Оплата  " + Float.parseFloat(String.valueOf(summaFloat)) + textString, Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,  textString, Toast.LENGTH_LONG).show();
                 }
             }
         });
